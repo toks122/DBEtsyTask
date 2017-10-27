@@ -1,0 +1,47 @@
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.6.6")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: "idea"
+apply plugin: "net.serenity-bdd.aggregator"
+
+println "project.serenity.outputDirectory= ${project.serenity.outputDirectory}"
+
+dependencies {
+	def SERENITY_VERSION = "1.6.6"
+	
+    testCompile 'net.serenity-bdd:serenity-core:' + SERENITY_VERSION
+    testCompile 'net.serenity-bdd:serenity-cucumber:1.5.15'
+    testCompile 'net.serenity-bdd:serenity-rest-assured:' + SERENITY_VERSION
+    testCompile 'org.assertj:assertj-core:3.1.0'
+    testCompile 'org.slf4j:slf4j-simple:1.7.12'
+    testCompile 'com.googlecode.lambdaj:lambdaj:2.3.3'
+    testCompile 'io.codearte.jfairy:jfairy:0.5.3'
+    compile 'net.serenity-bdd:serenity-screenplay:' + SERENITY_VERSION
+    compile 'net.serenity-bdd:serenity-screenplay-webdriver:' + SERENITY_VERSION
+    compile 'net.serenity-bdd:browse-the-web:1.1.34'
+    testCompile 'net.serenity-bdd:serenity-junit:' + SERENITY_VERSION
+  
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+    /* Pass all system properties: */
+    systemProperties System.getProperties()
+}
+
+gradle.startParameter.continueOnFailure = true
