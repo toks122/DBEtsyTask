@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Search" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-27T22:45:23" hostname="Oluseuns-MacBook-Pro.local" time="0.918">
+<testsuite name="Search" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-28T15:02:54" hostname="Oluseuns-MacBook-Pro.local" time="1.182">
   <properties/>
-  <testcase name="Should be able to search for products by tags" classname="Search" time="0.918"/>
+  <testcase name="Should be able to search for products by tags" classname="Search" time="1.182"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://openapi.etsy.com/v2/listings/active?api_key=it8yg5pd4mwid1v7t7itngnm&tags=olu%20amu
 Proxy:			<none>

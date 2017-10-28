@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Listings" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-27T22:45:17" hostname="Oluseuns-MacBook-Pro.local" time="6.038">
+<testsuite name="Listings" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-28T15:02:48" hostname="Oluseuns-MacBook-Pro.local" time="5.946">
   <properties/>
-  <testcase name="Listing should provide key information" classname="Listings" time="6.038"/>
+  <testcase name="Listing should provide key information" classname="Listings" time="5.946"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://openapi.etsy.com/v2/listings/553562134?api_key=it8yg5pd4mwid1v7t7itngnm
 Proxy:			<none>

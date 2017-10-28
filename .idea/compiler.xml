@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="test-developer-interview-stage-1-master_main" target="1.8" />
+      <module name="test-developer-interview-stage-1-master_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
